@@ -24,3 +24,19 @@ Authorization: Control access using:
 - ABAC (Attribute-Based Access Control)
 - Webhook Authorizers
 
+### TLS
+TLS (Transport Layer Security) encrypts communication between Kubernetes components (like kubelet, API server, etc.). Certificates are used to authenticate and secure this communication.
+
+Kube API Server
+/etc/kubernetes/manifests/kube-apiserver.yaml
+
+Info of a certificate
+
+```sh
+openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text -noout
+```
+
+```sh
+journalctl -u etcd.service -l
+kubectl logs etcd-master
+```
