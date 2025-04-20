@@ -1,0 +1,11 @@
+authentication:
+  anonymous:
+    enabled: false
+  webhook:
+    enabled: true
+authorization:
+  mode: Webhook
+readOnlyPort: 0
+tlsCertFile: "/var/lib/kubelet/pki/kubelet.crt"
+tlsPrivateKeyFile: "/var/lib/kubelet/pki/kubelet.key"
+protectKernelDefaults: true
