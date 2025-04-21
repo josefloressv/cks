@@ -29,6 +29,9 @@ tar -xvf kube-bench_0.10.4_darwin_amd64.tar.gz
 # run a test
 ./kube-bench --config-dir `pwd`/cfg --config `pwd`/cfg/config.yaml
 ./kube-bench -D cfg
+
+# re-run for specific check
+./kube-bench -D cfg --check='1.3.2'
 ```
 
  #### CIS-CAT Pro Assessor tool called Assessor-CLI
